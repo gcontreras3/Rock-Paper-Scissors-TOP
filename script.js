@@ -10,8 +10,8 @@ let choices = ["Rock", "Paper", "Scissors"]
 let computerChoice = choices[Math.floor(Math.random()*choices.length)]
 // let choices = ["Rock", "Paper", "Scissors"]
 let playerChoose = prompt("Pick your weapon. Rock, Paper or Scissors. Choose wisely!")
-let computerScore;
-let playerScore;
+let computerScore = 0;
+let playerScore = 0;
 
 function game(){
    
@@ -40,7 +40,7 @@ function score(){
   
     
     if (playerChoose === computerChoice){
-        console.log("tied")
+        console.log("Stalemate!")
     } else if (playerChoose !== computerChoice){
         if (playerChoose === "Rock" && computerChoice === "Scissors"){
             console.log("Player wins! Rock beats Scissors")
@@ -62,12 +62,16 @@ function score(){
             computerScore++
         }
     }
+    playerScore = playerScore
+    computerScore = computerScore
+    console.log(`The score is ${playerScore} and ${computerScore}`)
 }
 getComputerChoice()
 playerChoice()
 score()
 }
 game()
+
 // playerChoice()
 // getComputerChoice()
 
