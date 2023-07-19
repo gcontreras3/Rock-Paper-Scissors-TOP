@@ -6,24 +6,26 @@
 // Take score
 
 
-
+let choices = ["Rock", "Paper", "Scissors"]
+let computerChoice = choices[Math.floor(Math.random()*choices.length)]
+// let choices = ["Rock", "Paper", "Scissors"]
+let playerChoose = prompt("Pick your weapon. Rock, Paper or Scissors. Choose wisely!")
+let computerScore;
+let playerScore;
 
 function game(){
-
-
+   
 // This function uses takes a random number and associates it with an index in the array
 function getComputerChoice() {
-    let choices = ["Rock", "Paper", "Scissors"]
-    let computerChoice = choices[Math.floor(Math.random()*choices.length)]
-    console.log(computerChoice)
+    
+    console.log(`Computer selected ${computerChoice}`)
 }
 
 
 
 // This function takes in user input and checks if the input is correct and assigns it to the playerChoice
 function playerChoice(){
-    let choices = ["Rock", "Paper", "Scissors"]
-    let playerChoose = prompt("Pick your weapon. Rock, Paper or Scissors. Choose wisely!")
+    
     if (playerChoose.toString() === choices[0]){
         console.log("You selected Rock as your weapon of choice")
     } else if (playerChoose.toString() === choices[1]){
@@ -35,9 +37,8 @@ function playerChoice(){
 }
 
 function score(){
-    playerChoice()
-    let computerScore;
-    let playerScore;
+  
+    
     if (playerChoose === computerChoice){
         console.log("tied")
     } else if (playerChoose !== computerChoice){
