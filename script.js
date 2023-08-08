@@ -6,6 +6,7 @@
 // Take score
 
 // Trying to add conditionals to the game in order to play another game after the first
+// testing new branch rps-ui
 
 let choices = ["Rock", "Paper", "Scissors"]
 let computerChoice = choices[Math.floor(Math.random()*choices.length)]
