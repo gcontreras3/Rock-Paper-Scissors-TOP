@@ -7,6 +7,10 @@
 
 // Trying to add conditionals to the game in order to play another game after the first
 
+
+// Testing out the branch in git
+
+
 let choices = ["Rock", "Paper", "Scissors"]
 let computerChoice = choices[Math.floor(Math.random()*choices.length)]
 // let choices = ["Rock", "Paper", "Scissors"]
