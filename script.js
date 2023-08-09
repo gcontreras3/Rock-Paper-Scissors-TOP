@@ -16,7 +16,13 @@ let computerScore = 0;
 let playerScore = 0;
 
 function game(){
-   
+for (let i = 1; i <= 5; i++){
+    playRound(i);
+}
+function playRound(round){
+    getComputerChoice()
+    playerChoice()
+
 // This function uses takes a random number and associates it with an index in the array
 function getComputerChoice() {
     
@@ -68,9 +74,9 @@ function score(){
     computerScore = computerScore
     console.log(`The score is ${playerScore} and ${computerScore}`)
 }
-getComputerChoice()
-playerChoice()
+
 score()
+}
 }
 game()
 
